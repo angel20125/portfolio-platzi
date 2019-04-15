@@ -7,22 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Leonidas Esteban</title>
     <link rel="icon" href="img/favicon.png" type="image/png"/>  <!-- favicon de la pestaña-->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 
 <body>
-    <header>
+
+    <!-- SECTION HEADER -->
+    <header class="header">
         <div>
-            <figure>
+            <figure class="logotipo">
                 <img  src="img/logo.png" alt="logo Leonidas Esteban">
             </figure>
             <nav>
                 <ul>
                     <!-- el caracter # sirve para la navegacion interna -->
-                    <li> <a href="#id-portafolio">Portafolio</a> </li>  
-                    <li> <a href="#id-eventos">Experiencia</a> </li>
-                    <li> <a href="#id-contacto">Trabajemos Juntos</a> </li>
-                    <li> <a href="#id-incio">incio</a> </li>
+                    <li> <a class="link" href="#id-portfolio">Portafolio</a> </li>  
+                    <li> <a class="link" href="#id-events">Experiencia</a> </li>
+                    <li> <a class="link" href="#id-contact">Trabajemos Juntos</a> </li>
+                    <li> <a class="link" href="#id-hero">incio</a> </li>
                 </ul>
             </nav>
         </div>
@@ -30,9 +33,9 @@
 
 
     <!-- SECCION PRINCIPAL O HEROE -->
-    <section id="id-inicio">
-        <figure>
-            <img  width="500px" src="img/hero.jpg" alt="leonidasesteban.com/hero.jpg">
+    <section class="hero" id="id-hero">
+        <figure class="hero-image-containers">
+            <img class="hero-image" width="500px" src="img/hero.jpg" alt="leonidasesteban.com/hero.jpg">
         </figure>
         <h1>
             Hola! Soy <strong>Leonidas Esteban</strong> <br /> 
@@ -42,18 +45,18 @@
     </section>
     
     <!-- SECCION  PORTAFOLIO -->
-    <sectio id="id-portafolio">
+    <section  class="section-portfolio" id="id-portfolio">
         <hr/>
         <h2> Portafolio</h2>
-        <article>
-            <h3> Platzi Video</h3>
-            <p> React Native/React</p>
-            <p> <small> <strong>Fecha:</strong>   01/07/2018</small>  </p>
-            <p> <small> <strong>Puedes verlo:</strong> <a href="colocar link"> nombre del link</a>  </small> </p>
-            <figure>
-                <img width="500px" src="img/platzi-video-react-native.png" alt="leonidasesteban.com/Imagen de platzi video">
+        <article class="project">
+            <h3 class="project-title"> Platzi Video</h3>
+            <p class="project-course" > React Native/React</p>
+            <p class="project-date"> <small> <strong>Fecha:</strong>   01/07/2018</small>  </p>
+            <p class="project-url"> <small> <strong>Puedes verlo:</strong> <a href="colocar link"> nombre del link</a>  </small> </p>
+            <figure class="project-image-containers">
+                <img class="project-image" width="500px" src="img/platzi-video-react-native.png" alt="leonidasesteban.com/Imagen de platzi video">
             </figure>
-            <p>
+            <p class="project-description">
                 Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y
                 React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de
                 futuros creadores de aplicaciones multiplataforma
@@ -65,29 +68,29 @@
     </section>
 
     <!-- SECCION DE EXPERIENCIA -->
-    <section id="id-eventos">
+    <section class="section-events" id="id-events">
         <hr/>
         <h2>Más sobre mi experiencia</h2>
         <article>
-            <figure>
-                <img width="500px" src="img/platzi-conf.jpg" alt="leonidasesteban.com/imagen de PlatziConf">
+            <figure class="events-image-containers">
+                <img class="evens-image" width="500px" src="img/platzi-conf.jpg" alt="leonidasesteban.com/imagen de PlatziConf">
             </figure>
-            <h3> <strong> PLatziCon Mexico </strong> </h3>
-            <p> 
+            <h3 class="events-title"> <strong> PLatziCon Mexico </strong> </h3>
+            <p class="events-descriptions"> 
                 El evento más grande  sobre gente que quiere
                 aprender más de internet. EN este evento te 
                 te comparto como tener una vida de constante 
                 aprendizaje.
             </p>
-            <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0&t=334s" target="_blank">Ver Plática</a>
+            <a class="events-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0&t=334s" target="_blank">Ver Plática</a>
         </article>
     </section>
   
     <!-- SECCION CONTACTO -->
-    <section id="id-contacto">
+    <section class="section-contacs" id="id-contact">
         <hr/>
         <h2>¿Creamos algo juntos?</h2>
-        <form action="contacto">
+        <form action="contacto" class="form-email">
             <label for="-id-email-contacto"> (^.^) </label>
             <input type="email" placeholder="Déjame tú correo" id="-id-email-contacto"/>
             <button>Enviar</button>
@@ -96,7 +99,7 @@
 
 
     <!-- SECCION FOOTER -->
-    <footer>
+    <footer class="footer">
         <hr />
         pie página
     </footer>
