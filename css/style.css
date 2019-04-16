@@ -8,5 +8,14 @@ h4,
 h5,
 h6{
     /* font-family: 'Fjalla One' Arial, Helvetica, sans-serif; */
-    font-family: 'Fjalla One',Arial,sans-serif;
+    font-family:    'Fjalla One',Arial,sans-serif;
+    font-weight:    nomal;
 }
+
+h1{
+    font-size:      40px;
+    line-height:    1.5;
+    letter-spacing: -0.2px;
+    text-transform: capitalize;
+}
+
