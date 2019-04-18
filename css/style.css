@@ -51,6 +51,11 @@ h1 strong {
     background-position-x: right;                   /*Establece la  la posición de la imagen de  lado derecho*/
 }
 /*SECTION PROJECT*/
+.section-portfolio{
+    border: 1px solid gray;                                  /*Se establece el borde*/
+    border-radius: 10px;                                       /*Redondeo de las esquinas*/
+    box-shadow: 10px 10px 52px 0px rgba(0,0,0,0.75);         /*Se define  la sombra de la caja*/    
+}
 .project-details{
     width: 500px;           /* el ancho  del elemento*/
 }
