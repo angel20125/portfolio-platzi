@@ -16,10 +16,10 @@
 
     <!-- SECTION HEADER -->
     <header class="header">
+        <figure class="logotipo">
+            <img  src="img/logo.png" alt="logo Leonidas Esteban">
+        </figure>
         <div>
-            <figure class="logotipo">
-                <img  src="img/logo.png" alt="logo Leonidas Esteban">
-            </figure>
             <nav>
                 <ul>
                     <!-- el caracter # sirve para la navegacion interna -->
@@ -31,12 +31,9 @@
             </nav>
         </div>
     </header>
-    
-    <!-- SECCION PRINCIPAL O HEROE -->
+
+    <!-- SECTION PRINCIPAL O HEROE -->
     <section class="hero" id="id-hero">
-        <figure class="hero-image-containers">
-            <!-- <img class="hero-image" width="500px" src="img/hero.jpg" alt="leonidasesteban.com/hero.jpg"> -->
-        </figure>
         <h1>
             Hola! Soy <strong>Leonidas Esteban</strong> <br /> 
             Desarollador <strong> Javascript </strong> <br /> Con
@@ -44,7 +41,7 @@
         </h1>
     </section>
     
-    <!-- SECCION  PORTAFOLIO -->
+    <!-- SECTION  PORTAFOLIO -->
     <br id="id-portfolio-begin"/>
     <section  class="section-portfolio" id="id-portfolio">
         <h2> Portafolio</h2>
@@ -67,9 +64,31 @@
                 <img class="project-image" width="500px" src="img/platzi-video-react-native.png" alt="leonidasesteban.com/Imagen de platzi video">
             </figure>
         </article>
+   
+
+        <article class="project">
+            <div class="project-details">
+                <h3 class="project-title"> Platzi Video</h3>
+                <p class="project-course" > React Native/React</p>
+                <p class="project-date"> <small> <strong>Fecha:</strong>   01/07/2018</small>  </p>
+                <p class="project-url"> <small> <strong>Puedes verlo:</strong> <a href="colocar link"> nombre del link</a>  </small> </p>
+                <p class="project-description">
+                    Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y
+                    React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de
+                    futuros creadores de aplicaciones multiplataforma
+                    
+                    El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de
+                    constante aprendizaje.
+                </p>
+            </div>
+            <figure class="project-image-containers">
+                <img class="project-image" width="500px" src="img/platzi-video-react-native.png" alt="leonidasesteban.com/Imagen de platzi video">
+            </figure>
+        </article>
+
     </section>
    
-    <!-- SECCION DE EXPERIENCIA -->
+    <!-- SECTION DE EXPERIENCIA -->
     <br id="id-events-begin"/>
     <section class="section-events" id="id-events">
         <h2>Más sobre mi experiencia</h2>
@@ -91,7 +110,6 @@
     <!-- SECCION CONTACTO -->
     <br id="id-contact-begin"/>
     <section class="section-contacs" id="id-contact">
-        <hr/>
         <h2>¿Creamos algo juntos?</h2>
         <form action="contacto" class="form-email">
             <label for="-id-email-contacto"> (^.^) </label>
@@ -104,7 +122,6 @@
     <!-- SECCION FOOTER -->
     <br id="id-footer-begin "/>
     <footer class="footer">
-        <hr />
         pie página
     </footer>
 </body>
