@@ -5,7 +5,7 @@ gris claro=#fafafa;
 background gris=#1b2127;
 celeste=#026fff;
 */
-
+/*  REGLAS GENERALES*/
 body{
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -21,28 +21,62 @@ h6{
     font-weight:    nomal;
 }
 
+figure{
+    margin: 0;
+}
+ol,
+ul{
+    margin: 0;        /*Remueve los margenes*/
+    padding: 0;       /*quita la separación interna*/
+    list-style: none; /*Remueve las viñetas de las anclas*/
+}
 
 /* SECTIONS HEADER */
 
-header a {
-    color: white;                /*color a los enlaces*/
-    text-decoration: none;
-}
-
-header div nav ul{
-    margin: 0; 
-}
-
 .header{
-    margin: 0;
-    background-color: #1b2127;  /*color de fondo*/
+    height: 50px;
+    background-color: #1b2127;    /*color de fondo*/
+    display: flex;                  /*Organiza los elementos hijos directos de manera felxible*/
+    justify-content: space-between; /*Justifica los elementos hijos de forma horizontal*/
+    flex-wrap: wrap;
+    z-index:99;/*La z-indexpropiedad especifica el orden de superposición 
+    de los elementos posicionados. Los elementos con una mayor z-indexvoluntad, 
+    por lo tanto, siempre estarán frente a los elementos con una menor z-index.
+    Al establecer el z-indexvalor en un valor mayor que (o incluso igual a) 0,
+    se establece que el elemento esté encima de los elementos no posicionados 
+    sin z-indexespecificar. Siempre se puede establecer en un valor inferior a 99,
+    pero es una práctica común evitar posibles choques con otros elementos 
+    posicionados.*/
+    
+
+     /*Fijar cabecera*/
+     width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+     left: 0; /* Posicionamos la cabecera al lado izquierdo */
+     top: 0; /* Posicionamos la cabecera pegada arriba */
+     position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
-.logotipo{
-    margin: 0;
+.header nav{
+    height: inherit;
 }
+.header nav ol {
+    height: inherit;
+    display: flex;
+}
+.header nav ol li{
+    height: inherit;
+}
+.header nav ol li a{
+    height: inherit;
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
 /*SECTION HERO*/
 h1{
-    margin: 0px 510px 1px 1px;                  /*Evita el margin collasing*/
+    margin: 0px 510px 1px 1px;  /*Evita el margin collasing con la imagen de fondo*/
     color: white;             /*color de  la fuente  blanco*/
     font-size:      40px;       /*tamaño de la fuente */
     line-height:    1.5;        /*Separación del texto entre lineas*/
@@ -53,13 +87,17 @@ h1 strong {
     color:#026fff;
 }
 .hero{
-    margin: 0;
+    /* margin-top: 80px;   */
     height: 300px;
     background-color: #1b2127;
     background-image: url('../img/hero.jpg');       /*Establece una imagen de fondo */
     background-size: 500px 300px;                   /*Establece el tamaño de la img de fondo*/
     background-repeat: no-repeat;                   /*Establece la repetición de la img como nula*/
     background-position-x: right;                   /*Establece la  la posición de la imagen de  lado derecho*/
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    
 }
 /*SECTION PROJECT*/
 .section-portfolio{
@@ -84,4 +122,21 @@ h1 strong {
 .project-image-containers{
     width: 500px;               /* el ancho  del elemento*/
 /*     display:inline-block    /*este tipo de display sólo ocupa el ancho asignado en el width*/ */
+}
+
+/*SECTION FOOTER*/
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer  img{
+    vertical-align: middle;
+}
+.footer p a{
+    color: white;
+    text-decoration: none
 }
