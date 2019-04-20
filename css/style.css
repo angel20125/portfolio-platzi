@@ -206,6 +206,79 @@ h1 strong {
     text-decoration: none;
 
 }
+/*SECTION CONTACT*/
+.section-contact{
+    height: 200px;
+    background-color: #026fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.form-email{
+    padding: 0px 50px;
+}
+.form-email input{
+    
+    height: 25px;
+    border-color:white;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px 10px 5px 40px; /*Permite que el texto tenga un espacio*/
+    background-image: url('../img/envelope.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+.form-email button{
+    margin-top:25px;
+    margin-bottom: 25px;
+    display: block;
+    height: 38px;
+    width: 150px;
+    color:white;
+    border-color:white;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #026fff;
+
+}
+.section-contac-title{
+    color: white;
+}
+
+.social-link{
+    margin: 0px 30px;
+    display: inline-flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: 60px;
+    height: 60px;
+}
+.social-link.twitter{
+    background-image: url('../img/twitter.svg');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+ 
+}
+.social-link.facebook{
+    background-image:url('../img/facebook.svg');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+.social-link.instagram{
+    background-image:url('../img/instagram.svg');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+.social-link.github{
+    background-image: url('../img/github.svg');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+
+
 /*SECTION FOOTER*/
 .footer{
     color: white;
@@ -216,6 +289,7 @@ h1 strong {
 }
 .footer  img{
     vertical-align: middle; /* alineación del display flex de forma vertical  cuando existe un img, */
+    margin: 0;
 }
 .footer p a{
     color: white;
