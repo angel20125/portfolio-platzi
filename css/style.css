@@ -20,6 +20,14 @@ h6{
     font-family:    'Fjalla One',Arial,sans-serif;
     font-weight:    nomal;
 }
+h2{
+    text-transform: uppercase;
+    color: #026fff;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
 
 figure{
     margin: 0;
@@ -96,15 +104,16 @@ h1 strong {
     background-position-x: right;                   /*Establece la  la posición de la imagen de  lado derecho*/
     display: flex;
     align-items: center;
-    z-index: 99;
+
     
 }
 /*SECTION PROJECT*/
 .section-portfolio{
     background-color:#fafafa;
+    padding: 20px;
 }
+
 .project{
-    margin: 20px;
     margin-bottom: 50px;
     padding: 40px;                    /*Sangria del contenido interno*/
     border: 1px solid gray;         /*Se establece el borde*/
@@ -112,12 +121,35 @@ h1 strong {
     background-color: white;        /*Color de fondo*/
     box-sizing: border-box;           /* para mantener el tamaño de la caja independiente del padding o border */
     box-shadow: 10px 10px 6px 0px rgba(0,0,0,0.75);         /*Se define  la sombra de la caja*/
-    display: flex;    
+    display: flex;
+    justify-content: space-between; /*alineacion horizontal del  display flex, crea un espacio entre elementos*/
+    align-items: center;            /*alineacion verticl del display flex, centra los elementos verticalmente*/
+
+}
+.project strong{
+    font-family:    'Fjalla One',Arial,sans-serif;
 
 }
 .project-details{
     width: 500px;               /*El ancho  del elemento*/
     /* display:inline-block    /*este tipo de display sólo ocupa el ancho asignado en el width*/
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom:10px; 
+}
+.project-course{
+    margin: 10px 0px;
+}
+.project-date{
+    margin: 10px 0px;
+}
+.project-url{
+    margin: 10px 0px;
+}
+.project-description{
+    font-size: 20px;
 }
 .project-image-containers{
     width: 500px;               /* el ancho  del elemento*/
@@ -130,11 +162,11 @@ h1 strong {
     background-color: #1b2127;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    /*alineacion verticl del display flex, centra los elementos verticalmente*/
 
 }
 .footer  img{
-    vertical-align: middle;
+    vertical-align: middle; /* alineación del display flex de forma vertical  cuando existe un img, */
 }
 .footer p a{
     color: white;
