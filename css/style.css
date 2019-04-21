@@ -85,7 +85,7 @@ ul{
 
 /*SECTION HERO*/
 h1{
-    margin: 0px 510px 1px 1px;  /*Evita el margin collasing con la imagen de fondo*/
+    /*margin: 0px 510px 1px 1px;  Evita el margin collasing con la imagen de fondo*/
     color: white;             /*color de  la fuente  blanco*/
     font-size:      40px;       /*tamaño de la fuente */
     line-height:    1.5;        /*Separación del texto entre lineas*/
@@ -99,14 +99,19 @@ h1 strong {
     /* margin-top: 80px;   */
     height: 300px;
     background-color: #1b2127;
-    background-image: url('../img/hero.jpg');       /*Establece una imagen de fondo */
-    background-size: 500px 300px;                   /*Establece el tamaño de la img de fondo*/
-    background-repeat: no-repeat;                   /*Establece la repetición de la img como nula*/
-    background-position-x: right;                   /*Establece la  la posición de la imagen de  lado derecho*/
+    /* background-image: url('../img/hero.jpg');       /*Establece una imagen de fondo 
+    background-size: 500px 300px;                   /*Establece el tamaño de la img de fondo
+    background-repeat: no-repeat;                   /*Establece la repetición de la img como nula
+    background-position-x: right;                   /*Establece la  la posición de la imagen de  lado derecho */
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     
+}
+
+.hero-image{
+    object-fit: cover; /* permite que la imagen  asuma los valores del  elemento padre sin distorcionar*/
 }
 /*SECTION PROJECT*/
 .section-portfolio{
@@ -168,10 +173,11 @@ h1 strong {
   flex-wrap: wrap;
   background-color:#fafafa;
   padding: 20px;
+  box-shadow: -4px 0px 8px 8px rgba(0,0,0,0.75);
 }
 .event{
     border: 1px solid #1b2127;
-    width: 480px;
+    width: 400px;
     margin: 10px;
     border-radius: 10px; /*Borde redondeados*/
     flex-shrink: 0;     /*EL elemento no es encogible*/
@@ -220,16 +226,16 @@ h1 strong {
 }
 .form-email input{
     
-    height: 25px;
-    border-color:white;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 5px 10px 5px 40px; /*Permite que el texto tenga un espacio*/
-    background-image: url('../img/envelope.svg');
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: center;
+    height: 25px;       /*define el alto del elemento*/
+    border-color:white;       /*define el color del border*/
+    border-style: solid;        /*define el stilo del borde*/
+    border-radius: 10px;        /*crea efecto de bordes redondeados*/
+    padding: 5px 10px 5px 40px; /* Asigna espacio del contenido con respecto a su margen*/
+    background-image: url('../img/envelope.svg'); /*define la imagen de fondo*/
+    background-size: 20px 20px;         /*Define el tamño de la imagen de fondo*/ 
+    background-repeat: no-repeat;       /*hace que la imagen no repita*/
+    background-position-x: 5px;         /*moviliza la imagen  en el eje x, dando un efento de sangria*/     
+    background-position-y: center;      /*moviliza la imagen en el eje y centrandola verticalmente*/
 }
 .form-email button{
     margin-top:25px;
@@ -294,4 +300,17 @@ h1 strong {
 .footer p a{
     color: white;
     text-decoration: none
+}
+/*CONTAINER*/
+
+.container{
+    /*border: 1px solid salmon;  /*para depurar*/
+    width: 1000px;
+    height: inherit;
+    margin: 0 auto;
+    display: inherit;
+    flex-wrap: inherit;
+    flex-shrink: inherit;
+    justify-content: inherit;
+    align-items: inherit;
 }
